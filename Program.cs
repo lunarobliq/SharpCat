@@ -23,7 +23,7 @@ namespace SharpCat
 "Developed By: @sadpanda_sec\n\n" +
 "Description: C# alternative to the linux \"cat\" command... Prints file contents to console.\n\n" +
 "Usage: SharpCat.exe C:\\Some\\Path\\To\\File");
-                System.Environment.Exit(0);
+                //System.Environment.Exit(0);
 
             }
             else if (args.Length == 1)
@@ -35,13 +35,13 @@ namespace SharpCat
                     DateTime date = DateTime.Now;
                     Console.WriteLine("\n" + date + ": " + "Reading File: " + path + "\n\n");
                     Console.WriteLine(text);
-                    System.Environment.Exit(0);
+                    //System.Environment.Exit(0);
 
                 }
                 else
                 {
                     Console.WriteLine("File Does Not Exist");
-                    System.Environment.Exit(0);
+                    //System.Environment.Exit(0);
 
                 }
             }
@@ -51,7 +51,7 @@ namespace SharpCat
                 {
                     Console.WriteLine("Error...Provided more than one command line argument\n\n" +
                         "Usage: SharpCat.exe C:\\Some\\Path\\To\\File");
-                    System.Environment.Exit(0);
+                    //System.Environment.Exit(0);
                 }
             }
         }
